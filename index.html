@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="score-board">
+        <h2 class="title"> ScoreBoard</h2>
+       <div class="wrapper">
+            <div class="blue">
+            <h2 class="team"> Team Blue</h2>
+            <div class="field bluee" id="bluescore" >0</div>
+            <div class="buttons">
+                <button class="one two" onclick="addOnee()" >
+                    +1
+                </button>
+                <button class="one two" onclick="addTwoo()">
+                    +2
+                </button>
+                <button class="one two" onclick="addThreee()">
+                    +3
+                </button>
+                <button class="one two" onclick="liniss()">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+            <div class="red">
+            <h2 class="team"> Team Red</h2>
+            <div class="field redd" id="redscore" >0</div>
+            <div class="buttons">
+                <button class="one four"  onclick="addOne()" >
+                    +1
+                </button>
+                <button class="one four" onclick="addTwo()">
+                    +2
+                </button>
+                <button class="one four" onclick="addThree()">
+                    +3
+                </button>
+                <button class="one four" onclick="linis()">
+                    Clear
+                </button>
+            </div>
+        </div>
+       </div>
+       
+    </div>
+
+    <div class="footer">
+        <h5> lemuel_dev || 2023 </h5>
+    </div>
+    <script>
+
+        // variable
+         let rscore = 0;
+         let bscore = 0;
+        
+        // red team
+         function addOne() {
+         rscore = rscore + 1;
+        let redscore = document.getElementById('redscore');
+        redscore.innerText = rscore;
+        }
+
+        function addTwo() {
+            rscore = rscore + 2;
+           let redscore = document.getElementById('redscore');
+           redscore.innerText = rscore;
+           }
+           function addThree() { 
+            rscore = rscore + 3;
+           let redscore = document.getElementById('redscore');
+           redscore.innerText = rscore;
+           }
+        function linis() {
+            document.getElementById('redscore').innerHTML = 0;
+            rscore = 0; 
+        }
+        // end red
+
+
+        // blue team
+          function addOnee() {
+            bscore = bscore + 1;
+            let bluescore = document.getElementById('bluescore');
+            bluescore.innerText = bscore;
+            }
+            function addTwoo() {
+            bscore = bscore + 2;
+            let bluescore = document.getElementById('bluescore');
+            bluescore.innerText = bscore;
+           }
+           function addThreee() { 
+            bscore = bscore + 3;
+            let bluescore = document.getElementById('bluescore');
+            bluescore.innerText = bscore;
+           }
+        function liniss() {
+            document.getElementById('bluescore').innerHTML = 0;
+            bscore = 0; 
+        }
+   
+    </script>
+</body>
+</html>

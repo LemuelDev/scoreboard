@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height:100vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        burlywood, rgb(228, 166, 32)
+    );
+}
+
+.score-board {
+    text-align: center;
+    width: fit-content;
+    background: linear-gradient(45deg,
+    rgb(200, 218, 42), rgb(240, 139, 8)) ;
+    width: 100%;
+    align-items: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    margin-top: 7rem;
+}
+.team {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+.field {
+    padding: 2.5rem .5rem;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: .5em;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px 
+    rgba(0,0,0, .5);
+    transition: .3s ;
+}
+
+.bluee:hover {
+   background: #add8e6;
+}
+.redd:hover {
+    background: #f18686;
+}
+.field:focus {
+    border: 1px solid black;
+}
+.wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    line-height: 30px;
+    width: auto;
+
+}
+.buttons {
+    gap: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5em;
+}
+.two {
+    background-color: #add8e6;
+    border: none;
+    border-radius: 4px; 
+    transition: .3s;
+}
+
+.one {
+    padding: .7em 1rem;
+    box-shadow: 0 0 10px 
+    rgba(0,0,0, .5);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.two:hover {
+    transform: scale(1.1);
+}
+
+.four {
+    background: #f18686;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+}
+.four:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: .5em;
+    letter-spacing: 2px;
+}
+
+
+.footer {
+
+    padding-block: 1rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+.footer h5 {
+    background: linear-gradient(81.84deg, #0099ff -9.4%, #be561a 51.57%, #a4ac33 84.07%, #bb3e35 90.59%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
